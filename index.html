@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap" rel="stylesheet">
+        <title>Weather</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>ПРОГНОЗ ПОГОДЫ</h1>
+            <div class="searchAll">
+                <input
+                    id="search"
+                    type="text"
+                    class="search"
+                    placeholder="Поиск"
+                    
+                    autofocus
+                >
+                <label for="#search">
+                    <i class="fas fa-search"></i>
+                </label>
+            </div>
+        </header>
+       
+        <div class="day">
+            <div class="header">
+                <div class="city">Запорожье</div>
+                <div class="date">14.10.2021</div>
+            </div>
+            <div class="footer">
+                <div class="column">
+                    <div id="status">Sunny</div>
+                    <div id="mainImg">
+                        <img
+                            src="img/sun.svg"
+                            alt=""
+                            width="200px"
+                            height="200px"
+                        >
+                    </div>
+                </div>
+                <div id="mainTemp"><strong>18</strong><span>&#176</span>C</div>
+                <div class="column">
+                    <div>
+                        <p>Min температура</p>
+                        <p>Max температура</p>
+                        <p >Скорость ветра</p>
+                    </div>
+                    <div>
+                        <p id="minTempMain"><strong>18</strong><span>&#176</span>C</p>
+                        <p id="maxTempMain"><strong>18</strong><span>&#176</span>C</p>
+                        <p id="windMain"><strong>3</strong>км/ч</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="week">
+            <div id="vremya">В течении дня</div>
+            <div class="indicators">
+                <div>
+                    <p id="weekDay"></p>
+                    <p>
+                        <img
+                            src="img/zaglushka.png"
+                            alt=""
+                            width="100px"
+                            height="100px"
+                        >
+                    </p>
+                    <p>Прогноз</p>
+                    <p>
+                        Температура(
+                        <span>&#176</span>
+                        C)
+                    </p>
+                    <p>Ветер (km/h)</p>
+                </div>
+
+                <div>
+                    <p id="timeOne" class="week-time"></p>
+                    <p id="pictureOne" class="week-picture"></p>
+                    <p id="oneStatus" class="week-status"></p>
+                    <p id="oneTemp" class="week-temp"></p>
+                    <p id="windOne" class="week-wind"></p>
+                </div>
+
+                <div>
+                    <p id="timeTwo" class="week-time"></p>
+                    <p id="pictureTwo" class="week-picture"></p>
+                    <p id="twoStatus" class="week-status"></p>
+                    <p id="twoTemp" class="week-temp"></p>
+                    <p id="windTwo" class="week-wind"></p>
+                </div>
+
+                <div>
+                    <p id="timeThree" class="week-time"></p>
+                    <p id="pictureThree" class="week-picture"></p>
+                    <p id="threeStatus" class="week-status"></p>
+                    <p id="threeTemp" class="week-temp"></p>
+                    <p id="windThree" class="week-wind"></p>
+                </div>
+
+                <div>
+                    <p id="timeFour" class="week-time"></p>
+                    <p id="pictureFour" class="week-picture"></p>
+                    <p id="statusFour" class="week-status"></p>
+                    <p id="tempFour" class="week-temp"></p>
+                    <p id="windFour" class="week-wind"></p>
+                </div>
+
+                <div>
+                    <p id="timeFive" class="week-time"></p>
+                    <p id="pictureFive" class="week-picture"></p>
+                    <p id="statusFive" class="week-status"></p>
+                    <p id="tempFive" class="week-temp"></p>
+                    <p id="windFive" class="week-wind"></p>
+                </div>
+
+                <div>
+                    <p id="timeSix" class="week-time"></p>
+                    <p id="pictureSix" class="week-picture"></p>
+                    <p id="statusSix" class="week-status"></p>
+                    <p id="tempSix" class="week-temp"></p>
+                    <p id="windSix" class="week-wind"></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
